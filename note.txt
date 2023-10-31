@@ -1,3 +1,2 @@
 created my own decoder python file because there was no main python fail 
-for me to edit. tried reaching out to my partner but no response. did 
-everything i can
+for me to edit. attempted to reach out, unfortunately no response.
