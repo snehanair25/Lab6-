@@ -12,7 +12,7 @@ def encoder(pass_string):
         strresult += str(ele)
     return strresult
 
-#testing
+#Ephraim Nicolas COP3502C
 def decodetest(new_password):
     original_password = ""
     for element in new_password:
