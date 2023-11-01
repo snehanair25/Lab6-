@@ -1,5 +1,7 @@
 #Sneha Nair
 
+from decoder import decode
+
 def encoder(pass_string):
     encodedlst = []
     for element in pass_string:
@@ -10,7 +12,13 @@ def encoder(pass_string):
         strresult += str(ele)
     return strresult
 
-
+#testing
+def decodetest(new_password):
+    original_password = ""
+    for element in new_password:
+        nums = str(int(element) - 3)
+        original_password += nums
+    return original_password
 
 
 def main():
@@ -29,7 +37,7 @@ def main():
           encoded_string = encoder(pass_string)
           print("Your password has been encoded and stored!")
       else:
-          print("The encoded password is" + " " + encoded_string + " " +  "," + " " + "and the original password is" + " " + pass_string)
+          print("The encoded password is" + " " + encoded_string + " " +  "," + " " + "and the original password is" + " " + decodetest(encoded_string))
 
 
 
