@@ -13,7 +13,7 @@ def encoder(pass_string):
     return strresult
 
 #Ephraim Nicolas COP3502C
-def decodetest(new_password):
+def decode(new_password):
     original_password = ""
     for element in new_password:
         nums = str(int(element) - 3)
@@ -37,7 +37,7 @@ def main():
           encoded_string = encoder(pass_string)
           print("Your password has been encoded and stored!")
       else:
-          print("The encoded password is" + " " + encoded_string + " " +  "," + " " + "and the original password is" + " " + decodetest(encoded_string))
+          print("The encoded password is" + " " + encoded_string + " " +  "," + " " + "and the original password is" + " " + decode(encoded_string))
 
 
 
