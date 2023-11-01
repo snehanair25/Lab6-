@@ -4,8 +4,8 @@
 def encoder(pass_string):
     encodedlst = []
     for element in pass_string:
-        num = int(element) + 3
-        encodedlst.append(num)
+        nums = int(element) + 3
+        encodedlst.append(nums)
     strresult = ""
     for ele in encodedlst:
         strresult += str(ele)
